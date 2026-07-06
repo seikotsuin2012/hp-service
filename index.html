@@ -25,25 +25,23 @@
                     },
                     colors: {
                         navy: {
-                            DEFAULT: '#1e3a8a', // 信頼感のある濃紺
+                            DEFAULT: '#1e3a8a',
                             dark: '#172554',
                         },
                         gold: {
-                            DEFAULT: '#d97706', // 権威性を示すゴールド/オレンジ
+                            DEFAULT: '#d97706',
                             light: '#fcd34d',
                         },
-                        accent: '#ef4444', // 注意を引く赤
+                        accent: '#ef4444',
                     }
                 }
             }
         }
     </script>
     <style>
-        /* ストライプ背景 */
         .bg-stripe {
             background-image: repeating-linear-gradient(-45deg, #f8fafc, #f8fafc 10px, #ffffff 10px, #ffffff 20px);
         }
-        /* チェックマークリスト */
         .check-list li {
             position: relative;
             padding-left: 1.8rem;
@@ -60,7 +58,6 @@
             font-size: 1.2rem;
             font-weight: 900;
         }
-        /* ふきだし風 */
         .balloon {
             position: relative;
         }
@@ -81,8 +78,6 @@
             100% { box-shadow: 0 0 0 0 rgba(6, 199, 85, 0); }
         }
         .pb-safe { padding-bottom: env(safe-area-inset-bottom); }
-        details > summary { list-style: none; }
-        details > summary::-webkit-details-marker { display: none; }
     </style>
 </head>
 <body class="font-sans bg-gray-50 text-gray-800 pb-24">
@@ -100,20 +95,18 @@
             </a>
         </header>
 
-        <!-- ファーストビュー (王道LP風) -->
+        <!-- ファーストビュー -->
         <section class="relative bg-gray-100 pb-8">
-            <!-- 上部権威性バッジ -->
             <div class="bg-navy text-white text-center py-2 relative balloon z-10">
                 <p class="text-xs font-bold tracking-widest">祝・ご開業！HPの準備はできていますか？</p>
             </div>
             
             <div class="relative">
-                <!-- ここに fv-bg.jpg を入れます -->
-                <img src="fv-bg.jpg" alt="" class="w-full h-64 object-cover object-top opacity-90" onerror="this.src='https://placehold.co/800x600/e2e8f0/475569?text=fv-bg.jpg';">
+                <!-- fv-bg.jpgの読み込み -->
+                <img src="fv-bg.jpg?v=2" alt="パソコンを開いて笑顔で作業する整骨院の院長" class="w-full h-64 object-cover object-top opacity-90">
                 
                 <div class="absolute inset-0 bg-gradient-to-t from-white via-white/80 to-transparent"></div>
                 
-                <!-- キャッチコピーエリア -->
                 <div class="absolute bottom-0 left-0 w-full px-4 pb-4">
                     <p class="inline-block bg-accent text-white font-bold px-3 py-1 text-xs mb-2 shadow-md rounded-sm">
                         現役院長が裏方で作る！
@@ -127,7 +120,6 @@
                 </div>
             </div>
 
-            <!-- 特典バッジ -->
             <div class="mx-4 mt-4 bg-yellow-50 border-2 border-gold rounded-lg p-3 shadow-md relative">
                 <div class="absolute -top-3 left-4 bg-gold text-white text-[10px] font-bold px-2 py-0.5 rounded">
                     開業応援プレゼント
@@ -146,9 +138,9 @@
                 <span class="bg-gray-50 px-3">開業準備でこんな<span class="text-accent">お悩み</span><br>ありませんか？</span>
             </h2>
             
-            <!-- ここに worry.jpg を入れます -->
             <div class="mb-5 rounded-lg overflow-hidden border-2 border-white shadow-md">
-                <img src="worry.jpg" alt="" class="w-full h-auto" onerror="this.src='https://placehold.co/800x500/cbd5e1/475569?text=worry.jpg';">
+                <!-- worry.jpgの読み込み -->
+                <img src="worry.jpg?v=2" alt="開業準備で悩む院長" class="w-full h-auto">
             </div>
 
             <div class="bg-white rounded-lg p-5 shadow-sm border border-gray-200">
@@ -159,7 +151,6 @@
                 </ul>
             </div>
 
-            <!-- 解決の矢印 -->
             <div class="text-center my-6">
                 <div class="inline-block w-0 h-0 border-l-[15px] border-l-transparent border-r-[15px] border-r-transparent border-t-[20px] border-t-navy"></div>
             </div>
@@ -171,7 +162,7 @@
             </div>
         </section>
 
-        <!-- 選ばれる3つの理由 (カード型レイアウト) -->
+        <!-- 選ばれる3つの理由 -->
         <section class="py-12 px-4 bg-white">
             <h2 class="text-center font-black text-2xl text-navy mb-8 border-b-2 border-navy pb-3 inline-block mx-auto w-full">
                 当サービスが選ばれる<br><span class="text-accent text-3xl">3</span>つの理由
@@ -184,7 +175,7 @@
                 </div>
                 <div class="bg-gray-50 border-2 border-navy rounded-b-lg rounded-tr-lg p-4 shadow-md">
                     <h3 class="font-bold text-lg text-gray-900 mb-3 text-center border-b pb-2">初期5万・月額3千円の安心価格</h3>
-                    <img src="reason1.jpg" alt="" class="w-full h-40 object-cover rounded mb-3" onerror="this.src='https://placehold.co/800x400/e2e8f0/475569?text=reason1.jpg';">
+                    <img src="reason1.jpg?v=2" alt="スマホで綺麗に表示されたHP" class="w-full h-40 object-cover rounded mb-3">
                     <p class="text-sm text-gray-700 leading-relaxed">
                         高額なサーバー代は一切不要。月額3,000円の保守費用のみで、ドメイン・サーバーの維持から、写真差し替え等の更新作業（月2回まで）までしっかりサポートします。
                     </p>
@@ -198,7 +189,7 @@
                 </div>
                 <div class="bg-gray-50 border-2 border-navy rounded-b-lg rounded-tr-lg p-4 shadow-md">
                     <h3 class="font-bold text-lg text-gray-900 mb-3 text-center border-b pb-2">同業だから「専門用語丸投げOK」</h3>
-                    <img src="reason2.jpg" alt="" class="w-full h-40 object-cover rounded mb-3" onerror="this.src='https://placehold.co/800x400/e2e8f0/475569?text=reason2.jpg';">
+                    <img src="reason2.jpg?v=2" alt="問診している様子" class="w-full h-40 object-cover rounded mb-3">
                     <p class="text-sm text-gray-700 leading-relaxed">
                         筋膜リリース、骨盤矯正など、業者にイチから説明する苦労はゼロ！先生の得意な施術をヒアリングするだけで、私が患者さんに刺さる文章を代筆します。
                     </p>
@@ -212,7 +203,8 @@
                 </div>
                 <div class="bg-gray-50 border-2 border-navy rounded-b-lg rounded-tr-lg p-4 shadow-md">
                     <h3 class="font-bold text-lg text-gray-900 mb-3 text-center border-b pb-2">スマホ特化＆LINE予約直結</h3>
-                    <img src="reason3.jpg" alt="" class="w-full h-40 object-cover rounded mb-3" onerror="this.src='https://placehold.co/800x400/e2e8f0/475569?text=reason3.jpg';">
+                    <!-- reason3.jpgの読み込み -->
+                    <img src="reason3.jpg?v=2" alt="LINE予約ボタンをタップする指先" class="w-full h-40 object-cover rounded mb-3">
                     <p class="text-sm text-gray-700 leading-relaxed">
                         患者さんの9割はスマホ検索です。無駄なページは削り、スマホで読みやすく、ワンタップでLINE予約に直結する「集客特化型LP」を制作します。
                     </p>
@@ -220,7 +212,7 @@
             </div>
         </section>
 
-        <!-- 料金プラン (目立たせる) -->
+        <!-- 料金プラン -->
         <section class="py-10 px-4 bg-blue-50">
             <h2 class="text-center font-black text-2xl text-navy mb-6">料金プラン</h2>
             
